@@ -1,73 +1,35 @@
 {
-  "name": "ngx-perfect-scrollbar",
-  "description": "Angular wrapper library for Perfect Scrollbar",
-  "bugs": "https://github.com/zefoy/ngx-perfect-scrollbar/issues",
-  "license": "MIT",
-  "version": "7.2.0",
-  "main": "./bundles/ngx-perfect-scrollbar.umd.js",
-  "module": "./dist/ngx-perfect-scrollbar.es5.js",
-  "typings": "./dist/ngx-perfect-scrollbar.d.ts",
-  "tslint": {
-    "extends": "./tslint.json"
+  "bugs": {
+    "url": "https://github.com/tekraj/ngx-perfect-scrollbar"
   },
-  "stylelint": {
-    "extends": "./stylelint.json"
-  },
-  "scripts": {
-    "clean": "rm -rf dist bundles",
-    "start": "npm run build && npm run bundle",
-    "watch": "watch --wait=5 'npm run start' src/",
-    "lint": "npm run lint:ts && npm run lint:css",
-    "build": "npm run build:html && npm run build:css && npm run build:js",
-    "bundle": "npm run bundle:es5 ; npm run bundle:umd ; npm run minify:umd",
-    "prepare": "npm run clean && npm run build && npm run bundle",
-    "lint:ts": "tslint \"src/**/*.ts\"",
-    "lint:css": "stylelint \"src/**/*.css\"",
-    "build:js": "ngc -p src/tsconfig.json",
-    "build:css": "cpx src/lib/perfect-scrollbar.component.css dist/lib/",
-    "build:html": "cpx src/lib/perfect-scrollbar.component.html dist/lib/",
-    "bundle:es5": "rollup -c config/rollup-es5.config.js --silent",
-    "bundle:umd": "rollup -c config/rollup-umd.config.js --silent",
-    "minify:umd": "terser bundles/$npm_package_name.umd.js -o bundles/$npm_package_name.umd.min.js --source-map=\"filename=bundles/$npm_package_name.umd.min.js.map\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tekraj/ngx-perfect-scrollbar.git"
-  },
+  "bundleDependencies": false,
   "dependencies": {
     "perfect-scrollbar": "git+https://github.com/tekraj/perfect-scrollbar-new.git#master",
     "resize-observer-polyfill": "^1.5.0"
   },
-  "devDependencies": {
-    "@angular/cli": "^7.0.4",
-    "@angular/common": "^7.0.4",
-    "@angular/compiler": "^7.0.4",
-    "@angular/compiler-cli": "^7.0.4",
-    "@angular/core": "^7.0.4",
-    "@angular/platform-browser": "^7.0.4",
-    "@angular-devkit/build-angular": "^0.12.0",
-    "@types/node": "^10.12.0",
-    "codelyzer": "^4.5.0",
-    "core-js": "^2.6.0",
-    "cpx": "^1.5.0",
-    "rollup": "^1.1.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-sourcemaps": "^0.4.0",
-    "rxjs": "^6.3.0",
-    "stylelint": "^9.9.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^2.0.0",
-    "terser": "^3.14.0",
-    "tsickle": "^0.34.0",
-    "tslint": "^5.12.0",
-    "typescript": "^3.2.0",
-    "watch": "^1.0.0",
-    "zone.js": "^0.8.0"
-  },
+  "deprecated": false,
+  "description": "Angular wrapper library for Perfect Scrollbar",
+  "es2015": "fesm2015/ngx-perfect-scrollbar.js",
+  "esm2015": "esm2015/ngx-perfect-scrollbar.js",
+  "esm5": "esm5/ngx-perfect-scrollbar.js",
+  "fesm2015": "fesm2015/ngx-perfect-scrollbar.js",
+  "fesm5": "fesm5/ngx-perfect-scrollbar.js",
+  "homepage": "https://github.com/tekraj/ngx-perfect-scrollbar",
+  "license": "MIT",
+  "main": "bundles/ngx-perfect-scrollbar.umd.js",
+  "metadata": "ngx-perfect-scrollbar.metadata.json",
+  "module": "fesm5/ngx-perfect-scrollbar.js",
+  "name": "ngx-perfect-scrollbar",
   "peerDependencies": {
-    "@angular/common": ">=5.0.0",
-    "@angular/core": ">=5.0.0",
-    "rxjs": ">=6.0.0"
-  }
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tekraj/ngx-perfect-scrollbar"
+  },
+  "sideEffects": false,
+  "typings": "ngx-perfect-scrollbar.d.ts",
+  "version": "9.0.0"
 }
-

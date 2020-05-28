@@ -10,7 +10,7 @@ This documentation is for the latest 5/6.x.x version which requires Angular 5 or
 
 [Example application](https://zefoy.github.io/ngx-perfect-scrollbar/)
  |
-[StackBlitz example](https://stackblitz.com/github/zefoy/ngx-perfect-scrollbar/tree/master/example)
+[StackBlitz example](https://stackblitz.com/github/zefoy/ngx-perfect-scrollbar/tree/master)
  |
 [Perfect Scrollbar documentation](https://github.com/utatti/perfect-scrollbar/)
 
@@ -18,24 +18,14 @@ This documentation is for the latest 5/6.x.x version which requires Angular 5 or
 
 ```bash
 npm install
-npm start
+npm run build
 ```
 
 ### Running the example
 
 ```bash
-cd example
 npm install
-npm start
-```
-
-### Library development
-
-
-```bash
-npm link
-cd example
-npm link ngx-perfect-scrollbar
+npm run start
 ```
 
 ### Installing and usage
@@ -135,7 +125,7 @@ handlers                // List of event handlers to scroll the element.
 wheelSpeed              // Scroll speed for the mousewheel event (Default: 1).
 swipeEasing             // Use easing for the swipe scrolling (Default: true).
 suppressScrollX         // Disable X axis in all situations (Default: false).
-suppressScrollY         // Disable Y axis ni all situations (Default: false).
+suppressScrollY         // Disable Y axis in all situations (Default: false).
 wheelPropagation        // Propagate wheel events at the end (Default: false).
 useBothWheelAxes        // Always use both of the wheel axes (Default: false).
 minScrollbarLength      // Minimum size (px) for the scrollbar (Default: null).
